@@ -1,0 +1,66 @@
+.factures{
+    height: 800px;
+    background-color:rgb(10, 10, 10); 
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+
+    .container{
+        width: 1100px;
+        display: flex;
+        align-items: center;
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .subtitle{
+                color:rgb(254, 254, 254);
+                font-family: var(--ff-shadows-into-light);
+                font-size:25px;
+                letter-spacing: 1px;
+                margin-block-end: 25px;
+            }
+
+            h1{
+                color: #ee0000;
+                font-size: 50px;
+                
+            }
+            button{
+                color: rgb(244, 241, 241);
+                padding: 15px 25px;
+                border-radius: 5px;
+                border: 1px solid rgb(27, 24, 24);
+                cursor: pointer;
+                background-color:#ee0000;
+                font-size: 18px;
+          
+                &:hover{
+                  background-color: #ee0000;
+                  border-color: #f4fbf8;
+                  color: #f4fbf8;
+                }
+              }
+        }
+
+        .rigth{
+            flex: 5;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        
+            .image-container {
+                position: relative;
+
+                  .foreground-image {
+                    width: 70%;
+                    height: auto;
+                  }
+              }
+        }
+    }
+}
+
